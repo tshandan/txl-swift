@@ -14,6 +14,12 @@
 		588C67A61D2A08BB00E0AD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588C67A41D2A08BB00E0AD69 /* LaunchScreen.storyboard */; };
 		588C67B11D2A08BB00E0AD69 /* txl_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588C67B01D2A08BB00E0AD69 /* txl_swiftTests.swift */; };
 		588C67BC1D2A08BB00E0AD69 /* txl_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588C67BB1D2A08BB00E0AD69 /* txl_swiftUITests.swift */; };
+		588C67CA1D2A08CF00E0AD69 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 588C67C91D2A08CF00E0AD69 /* libsqlite3.0.tbd */; };
+		588C67D01D2A091B00E0AD69 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588C67CD1D2A091B00E0AD69 /* SQLiteDB.swift */; };
+		588C67D11D2A091B00E0AD69 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588C67CE1D2A091B00E0AD69 /* SQLTable.swift */; };
+		588C67D21D2A091B00E0AD69 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588C67CF1D2A091B00E0AD69 /* String-Extras.swift */; };
+		588C67D41D2A092200E0AD69 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 588C67D31D2A092200E0AD69 /* data.db */; };
+		588C67D61D2A15FE00E0AD69 /* seeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588C67D51D2A15FE00E0AD69 /* seeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,13 @@
 		588C67B71D2A08BB00E0AD69 /* txl swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "txl swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		588C67BB1D2A08BB00E0AD69 /* txl_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = txl_swiftUITests.swift; sourceTree = "<group>"; };
 		588C67BD1D2A08BB00E0AD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		588C67C91D2A08CF00E0AD69 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		588C67CB1D2A08F000E0AD69 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		588C67CD1D2A091B00E0AD69 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		588C67CE1D2A091B00E0AD69 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		588C67CF1D2A091B00E0AD69 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		588C67D31D2A092200E0AD69 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.db; path = ../data.db; sourceTree = "<group>"; };
+		588C67D51D2A15FE00E0AD69 /* seeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = seeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588C67CA1D2A08CF00E0AD69 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,9 @@
 		588C678F1D2A08BB00E0AD69 = {
 			isa = PBXGroup;
 			children = (
+				588C67C91D2A08CF00E0AD69 /* libsqlite3.0.tbd */,
+				588C67D31D2A092200E0AD69 /* data.db */,
+				588C67CC1D2A091B00E0AD69 /* SQLiteDB */,
 				588C679A1D2A08BB00E0AD69 /* txl swift */,
 				588C67AF1D2A08BB00E0AD69 /* txl swiftTests */,
 				588C67BA1D2A08BB00E0AD69 /* txl swiftUITests */,
@@ -103,6 +120,8 @@
 				588C67A21D2A08BB00E0AD69 /* Assets.xcassets */,
 				588C67A41D2A08BB00E0AD69 /* LaunchScreen.storyboard */,
 				588C67A71D2A08BB00E0AD69 /* Info.plist */,
+				588C67CB1D2A08F000E0AD69 /* Header.h */,
+				588C67D51D2A15FE00E0AD69 /* seeViewController.swift */,
 			);
 			path = "txl swift";
 			sourceTree = "<group>";
@@ -123,6 +142,17 @@
 				588C67BD1D2A08BB00E0AD69 /* Info.plist */,
 			);
 			path = "txl swiftUITests";
+			sourceTree = "<group>";
+		};
+		588C67CC1D2A091B00E0AD69 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				588C67CD1D2A091B00E0AD69 /* SQLiteDB.swift */,
+				588C67CE1D2A091B00E0AD69 /* SQLTable.swift */,
+				588C67CF1D2A091B00E0AD69 /* String-Extras.swift */,
+			);
+			name = SQLiteDB;
+			path = ../SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				588C67A61D2A08BB00E0AD69 /* LaunchScreen.storyboard in Resources */,
+				588C67D41D2A092200E0AD69 /* data.db in Resources */,
 				588C67A31D2A08BB00E0AD69 /* Assets.xcassets in Resources */,
 				588C67A11D2A08BB00E0AD69 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588C67D21D2A091B00E0AD69 /* String-Extras.swift in Sources */,
+				588C67D01D2A091B00E0AD69 /* SQLiteDB.swift in Sources */,
+				588C67D61D2A15FE00E0AD69 /* seeViewController.swift in Sources */,
+				588C67D11D2A091B00E0AD69 /* SQLTable.swift in Sources */,
 				588C679E1D2A08BB00E0AD69 /* ViewController.swift in Sources */,
 				588C679C1D2A08BB00E0AD69 /* AppDelegate.swift in Sources */,
 			);
@@ -403,6 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "txl.txl-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105041/Desktop/txl swift/txl swift/Header.h";
 			};
 			name = Debug;
 		};
@@ -414,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "txl.txl-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105041/Desktop/txl swift/txl swift/Header.h";
 			};
 			name = Release;
 		};
